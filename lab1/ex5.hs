@@ -1,14 +1,14 @@
 sgn :: Int -> Int
 sgn n = if n < 0
-       then -1
-       else if n == 0
+        then -1
+        else if n == 0
             then 0
             else 1
 
 absInt :: Int -> Int  
 absInt a = if a >= 0
-        then a
-        else (-1)*a
+           then a
+           else (-1)*a
 
 min2Int :: (Int, Int) -> Int 
 min2Int (x,y) = if x < y
@@ -17,8 +17,8 @@ min2Int (x,y) = if x < y
 
 min3Int :: (Int,Int,Int) -> Int
 min3Int (a,b,c) = if min2Int(a,b) < min2Int(b,c)
-            then min2Int(a,b)
-            else min2Int(b,c)
+                  then min2Int(a,b)
+                  else min2Int(b,c)
 
 toUpper :: Char -> Char
 toUpper c = if (fromEnum c) > 96

@@ -17,5 +17,4 @@ threeEqual (x, y, z) = x == y && y == z
 -- triangleArea (a,b,c) = sqrt(0.5*(a+b+c)*0.5*(b+c-a)*0.5*(a+c-b)*0.5*(a+b-c))
 triangleArea :: Floating a => (a, a, a) -> a
 triangleArea (a, b, c) = sqrt (s * (s - a) * (s - b) * (s - c))
-  where
-    s = (a + b + c) / 2
+  where s = (a + b + c) / 2
